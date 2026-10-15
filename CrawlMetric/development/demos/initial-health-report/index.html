@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Development demo — Initial Website Health Report</title>
+<meta name="robots" content="noindex, nofollow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="report.css">
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<div id="crawlmetric-intro">
+
+    <div class="intro-grid"></div>
+
+    <div class="logo-stage">
+
+        <svg
+            class="crawl-logo"
+            viewBox="0 0 700 700"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-label="CrawlMetric"
+        >
+
+            <!-- =====================================
+                 GRADIENTS
+            ====================================== -->
+
+            <defs>
+
+                <linearGradient id="outerBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#173f86"/>
+                    <stop offset="45%" stop-color="#155b9b"/>
+                    <stop offset="78%" stop-color="#177c9e"/>
+                    <stop offset="100%" stop-color="#67a84d"/>
+                </linearGradient>
+
+                <linearGradient id="deepBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#17488c"/>
+                    <stop offset="55%" stop-color="#17649e"/>
+                    <stop offset="100%" stop-color="#147f9d"/>
+                </linearGradient>
+
+                <linearGradient id="blueCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#175a97"/>
+                    <stop offset="52%" stop-color="#147f9e"/>
+                    <stop offset="100%" stop-color="#179b96"/>
+                </linearGradient>
+
+                <linearGradient id="cyanMint" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#157f98"/>
+                    <stop offset="52%" stop-color="#199a8d"/>
+                    <stop offset="100%" stop-color="#3ba66f"/>
+                </linearGradient>
+
+                <linearGradient id="mintGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#238f7f"/>
+                    <stop offset="55%" stop-color="#48a763"/>
+                    <stop offset="100%" stop-color="#78ad46"/>
+                </linearGradient>
+
+                <filter id="ringGlow" x="-30%" y="-30%" width="160%" height="160%">
+                    <feGaussianBlur stdDeviation="1.4" result="blur"/>
+                    <feMerge>
+                        <feMergeNode in="blur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+
+            </defs>
+
+
+            <!-- =====================================
+                 OUTER CIRCUIT SYSTEM
+            ====================================== -->
+
+            <g class="orbit outer-orbit">
+
+                <circle
+                    class="outer-path outer-path-a"
+                    cx="350"
+                    cy="350"
+                    r="285"
+                />
+
+                <circle
+                    class="outer-path outer-path-b"
+                    cx="350"
+                    cy="350"
+                    r="285"
+                />
+
+                <circle
+                    class="outer-path outer-path-c"
+                    cx="350"
+                    cy="350"
+                    r="285"
+                />
+
+                <!-- irregular outer nodes -->
+                <circle class="node node-blue" cx="131" cy="168" r="4"/>
+                <circle class="node node-blue" cx="523" cy="124" r="4"/>
+                <circle class="node node-cyan" cx="621" cy="438" r="4"/>
+                <circle class="node node-green" cx="162" cy="574" r="4"/>
+
+            </g>
+
+
+            <!-- =====================================
+                 TRACK 1
+                 r = 248
+            ====================================== -->
+
+            <g class="orbit orbit-1">
+
+                <circle
+                    class="track track-1"
+                    cx="350"
+                    cy="350"
+                    r="248"
+                />
+
+                <circle class="node node-blue" cx="195" cy="156" r="4"/>
+                <circle class="node node-blue" cx="559" cy="217" r="4"/>
+                <circle class="node node-cyan" cx="568" cy="468" r="4"/>
+                <circle class="node node-blue" cx="261" cy="582" r="4"/>
+                <circle class="node node-blue" cx="103" cy="371" r="4"/>
+
+
+            </g>
+
+
+            <!-- =====================================
+                 TRACK 2
+                 r = 220
+            ====================================== -->
+
+            <g class="orbit orbit-2">
+
+                <circle
+                    class="track track-2"
+                    cx="350"
+                    cy="350"
+                    r="220"
+                />
+
+                <circle class="node node-blue" cx="297" cy="136" r="4"/>
+                <circle class="node node-cyan" cx="527" cy="219" r="4"/>
+                <circle class="node node-cyan" cx="556" cy="428" r="4"/>
+                <circle class="node node-blue" cx="399" cy="564" r="4"/>
+                <circle class="node node-blue" cx="160" cy="461" r="4"/>
+
+
+            </g>
+
+
+            <!-- =====================================
+                 TRACK 3
+                 r = 192
+            ====================================== -->
+
+            <g class="orbit orbit-3">
+
+                <circle
+                    class="track track-3"
+                    cx="350"
+                    cy="350"
+                    r="192"
+                />
+
+                <circle class="node node-cyan" cx="229" cy="201" r="4"/>
+                <circle class="node node-cyan" cx="432" cy="176" r="4"/>
+                <circle class="node node-cyan" cx="541" cy="371" r="4"/>
+                <circle class="node node-cyan" cx="452" cy="513" r="4"/>
+                <circle class="node node-cyan" cx="180" cy="439" r="4"/>
+
+            </g>
+
+
+            <!-- =====================================
+                 TRACK 4
+                 r = 164
+            ====================================== -->
+
+            <g class="orbit orbit-4">
+
+                <circle
+                    class="track track-4"
+                    cx="350"
+                    cy="350"
+                    r="164"
+                />
+
+                <circle class="node node-cyan" cx="314" cy="190" r="4"/>
+                <circle class="node node-cyan" cx="477" cy="246" r="4"/>
+                <circle class="node node-mint" cx="498" cy="421" r="4"/>
+                <circle class="node node-cyan" cx="323" cy="512" r="4"/>
+                <circle class="node node-cyan" cx="194" cy="299" r="4"/>
+
+            </g>
+
+
+            <!-- =====================================
+                 TRACK 5
+                 r = 136
+            ====================================== -->
+
+            <g class="orbit orbit-5">
+
+                <circle
+                    class="track track-5"
+                    cx="350"
+                    cy="350"
+                    r="136"
+                />
+
+                <circle class="node node-mint" cx="266" cy="243" r="4"/>
+                <circle class="node node-mint" cx="445" cy="253" r="4"/>
+                <circle class="node node-green" cx="484" cy="372" r="4"/>
+                <circle class="node node-mint" cx="402" cy="476" r="4"/>
+                <circle class="node node-mint" cx="215" cy="365" r="4"/>
+
+            </g>
+
+
+            <!-- =====================================
+                 TRACK 6
+                 r = 108
+            ====================================== -->
+
+            <g class="orbit orbit-6">
+
+                <circle
+                    class="track track-6"
+                    cx="350"
+                    cy="350"
+                    r="108"
+                />
+
+                <circle class="node node-green" cx="328" cy="244" r="4"/>
+                <circle class="node node-green" cx="438" cy="287" r="4"/>
+                <circle class="node node-green" cx="439" cy="411" r="4"/>
+                <circle class="node node-green" cx="321" cy="454" r="4"/>
+                <circle class="node node-mint" cx="244" cy="329" r="4"/>
+
+            </g>
+
+
+            <!-- =====================================
+                 TRACK 7
+                 r = 80
+                 Gives C breathing room
+            ====================================== -->
+
+            <g class="orbit orbit-7">
+
+                <circle
+                    class="track track-7"
+                    cx="350"
+                    cy="350"
+                    r="80"
+                />
+
+                <circle class="node node-green" cx="301" cy="287" r="4"/>
+                <circle class="node node-green" cx="419" cy="310" r="4"/>
+                <circle class="node node-green" cx="405" cy="408" r="4"/>
+                <circle class="node node-green" cx="288" cy="401" r="4"/>
+
+            </g>
+
+
+            <!-- =====================================
+                 CENTER C
+                 DOES NOT MOVE
+            ====================================== -->
+
+            <g class="center-c">
+
+                <rect x="322" y="315" width="10" height="70"/>
+
+                <rect x="322" y="315" width="55" height="10"/>
+
+                <rect x="322" y="375" width="55" height="10"/>
+
+                <rect x="377" y="321" width="9" height="9"/>
+
+                <rect x="377" y="370" width="9" height="9"/>
+
+            </g>
+
+        </svg>
+
+        <div class="intro-wordmark">
+            <div class="brand-name" id="brand-name"></div>
+    <div class="brand-since">SINCE 2026</div>
+</div>
+
+    </div>
+
+</div>
+
+<main id="crawlmetric-app" hidden>
+    <a class="report-skip" href="#report-summary">Skip to report</a>
+    <header class="report-masthead">
+        <a class="report-brand" href="#report-top" aria-label="CrawlMetric report"><span class="report-brand-symbol" aria-hidden="true">C</span> CrawlMetric<span class="report-brand-caption">WEBSITE INTELLIGENCE</span></a>
+        <span class="report-demo">DEMO DATA · SAMPLE REPORT</span>
+    </header>
+    <article class="report-document" id="report-top">
+        <div class="report-kicker"><span>INITIAL WEBSITE HEALTH REPORT</span><span>01 / THE ASSESSMENT</span></div>
+        <section class="report-title-block" aria-labelledby="report-title">
+            <p class="report-eyebrow">PREPARED FOR</p>
+            <h1 id="report-title">Fayetteville<br>Animal Hospital<span class="report-title-dot">.</span></h1>
+            <p class="report-deck">A clearer picture of your website.<br>A practical path to a healthier digital presence.</p>
+            <dl class="report-metadata"><div><dt>WEBSITE</dt><dd>fayettevilleanimalhospital.example</dd></div><div><dt>SAMPLE AUDIT DATE</dt><dd>October 7, 2026</dd></div><div><dt>PREPARED BY</dt><dd>CrawlMetric</dd></div></dl>
+        </section>
+        <aside class="report-demo-note"><span class="report-note-icon" aria-hidden="true">i</span><p><strong>A demonstration, not a live assessment.</strong> This fictional business, website, scores, counts, and findings illustrate the report experience. No website has been crawled or tested.</p></aside>
+        <section class="report-overview" id="report-summary" aria-labelledby="overview-title">
+            <div class="report-score-panel"><p class="report-eyebrow">OVERALL WEBSITE HEALTH · DEMO</p><div class="report-score"><svg viewBox="0 0 220 220" aria-hidden="true"><circle class="report-score-track" cx="110" cy="110" r="94"/><circle class="report-score-value" cx="110" cy="110" r="94"/></svg><div><strong>72</strong><span>OUT OF 100</span></div></div><p class="report-score-status"><span></span> A solid foundation, with room to improve</p><p class="report-score-disclaimer">Illustrative score. Not a calculated result.</p></div>
+            <div class="report-summary-copy"><p class="report-eyebrow">THE BIG PICTURE</p><h2 id="overview-title">Built to care.<br>Ready to be found.</h2><p>In this sample assessment, your website gives pet owners a welcoming introduction to the hospital. The essentials are in place, but a few obstacles could make it harder to discover your services and take the next step.</p><p>The greatest opportunities are straightforward: help search engines find key service pages, give visitors a clearer route to booking, and make important content easier for everyone to use.</p><div class="report-takeaway"><strong>Where to start</strong><p>Focus on the paths that connect a pet owner with care: finding a service, understanding it, and requesting an appointment.</p></div></div>
+        </section>
+        <section class="report-section" aria-labelledby="categories-title"><div class="report-section-heading"><div><p class="report-eyebrow">01 / HEALTH AT A GLANCE</p><h2 id="categories-title">Four perspectives. One website.</h2></div><p>Sample category scores<br><span>All values are demo data.</span></p></div><div id="report-categories" class="report-categories"></div><p class="report-method-note">These example scores communicate relative priorities only; no scoring methodology or crawl analysis is connected.</p></section>
+        <section class="report-section" aria-labelledby="findings-title"><div class="report-section-heading"><div><p class="report-eyebrow">02 / WHAT DESERVES ATTENTION</p><h2 id="findings-title">The five things that matter most.</h2></div><p>Prioritized for your business.<br><span>Open a finding for the full picture.</span></p></div><div class="report-findings-label"><span>ILLUSTRATIVE FINDINGS · DEMO DATA</span><button type="button" id="report-expand">Expand all details</button></div><div id="report-findings"></div></section>
+        <section class="report-section" aria-labelledby="plan-title"><div class="report-section-heading"><div><p class="report-eyebrow">03 / YOUR IMPROVEMENT PLAN</p><h2 id="plan-title">Make progress in the right order.</h2></div><p>A suggested sequence,<br><span>not a delivery commitment.</span></p></div><div class="report-plan"><section><span class="report-phase">FIRST</span><h3>Clear the path to care.</h3><p>Address service-page visibility and repair appointment links so people can find the hospital and reach the right destination.</p><p class="report-plan-owner">Website developer + practice manager</p><a href="#finding-1">Review findings 01–02 <span aria-hidden="true">↗</span></a></section><section><span class="report-phase">NEXT</span><h3>Make every visit easier.</h3><p>Resize oversized photos and add useful image descriptions to support a more accessible, lighter browsing experience.</p><p class="report-plan-owner">Website developer + content editor</p><a href="#finding-3">Review findings 03–04 <span aria-hidden="true">↗</span></a></section><section><span class="report-phase">THEN</span><h3>Give each service a voice.</h3><p>Write distinct page titles, check the updated visitor journeys, and arrange a follow-up assessment to confirm the changes.</p><p class="report-plan-owner">Content editor + website developer</p><a href="#finding-5">Review finding 05 <span aria-hidden="true">↗</span></a></section></div></section>
+        <section class="report-closing" aria-labelledby="next-title"><div><p class="report-eyebrow">04 / THE NEXT CHAPTER</p><h2 id="next-title">A healthier website.<br>A more confident next step.</h2></div><div><p>A useful report is the beginning of a conversation. Review the priorities with your website team, agree on what matters most to the practice, and assign an owner to each improvement.</p><p>For a real assessment, the next step would be to review actual crawl data and verify findings in context. This demo does not confirm issues or promise search rankings, bookings, or performance gains.</p><button type="button" class="report-print" id="report-print">Save or print this sample <span aria-hidden="true">↗</span></button></div></section>
+        <footer class="report-footer"><div><strong>CrawlMetric</strong><p>Clarity for your website. Direction for your business.</p></div><p>FAYETTEVILLE ANIMAL HOSPITAL<br>INITIAL WEBSITE HEALTH REPORT · DEMO DATA</p></footer>
+    </article>
+    <div class="report-dev"><span>DEVELOPMENT DEMO · NOT A CLIENT REPORT</span><a href="../../../index.html">Return to CrawlMetric</a><button id="report-replay" type="button">↻ Replay introduction</button></div>
+</main>
+<script src="../../../script.js"></script>
+<script src="report.js"></script>
+
+</body>
+</html>
