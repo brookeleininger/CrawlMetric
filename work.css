@@ -194,7 +194,7 @@
 .case-section-heading span { display: block; margin-bottom: 18px; color: var(--cyan); font-size: 10px; letter-spacing: 1.4px; }
 #business-site .walton-case-study .case-section-heading h2 { color: var(--paper); font: italic clamp(38px, 5vw, 66px)/1.03 Georgia, 'Times New Roman', serif; letter-spacing: -2px; }
 .case-section-heading > p { max-width: 430px; justify-self: end; color: #aab7c9; font-size: 14px; }
-.walton-stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid #7ec9cb55; border-left: 1px solid #7ec9cb55; }
+.walton-stat-grid { display: grid; grid-template-columns: repeat(5, 1fr); border-top: 1px solid #7ec9cb55; border-left: 1px solid #7ec9cb55; }
 .walton-stat-card { position: relative; min-height: 310px; padding: 30px 26px; border-right: 1px solid #7ec9cb55; border-bottom: 1px solid #7ec9cb55; background: #111c32; transition: transform .2s, background .2s; }
 .walton-stat-card:hover { z-index: 1; transform: translateY(-4px); background: #15243e; }
 .stat-index { display: block; margin-bottom: 52px; color: var(--cyan); font-size: 9px; }
