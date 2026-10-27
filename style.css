@@ -1,1 +1,881 @@
-m´ÎàßΩ©bu™‡∫gß∂ÀrïÁ,±KÅÊ⁄±Ó∏ÿ[ûÈ¢äw‚ïÍ(∫◊‚ïÊ€≠Ê§n∑öëÈ‹°◊ù¢Îi∫€©ä{hñ)ﬁ≤áÂzx-Ü{¶◊^rá^uÁ(uËß¶ÎaÖÈiv+)ï¨≠Ü+&zÀÅË¢ûõ≠äznµ¯•y◊üjÈm~äÏµÿß¢ã≠¶Îh∫⁄nµ¯•y◊üjÈm~äÏµ⁄.
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+background: #0D1528;
+}
+
+
+/* =========================================
+   INTRO SCREEN
+========================================= */
+
+#crawlmetric-intro {
+    position: fixed;
+    inset: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(18, 74, 135, 0.13) 0%,
+            rgba(23, 37, 72, 0) 43%
+        ),
+        #0D1528;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.intro-grid {
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(90, 145, 185, 0.20) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(90, 145, 185, 0.20) 1px,
+            transparent 1px
+        );
+
+    background-size: 42px 42px;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo-stage {
+    position: relative;
+    z-index: 2;
+
+    width: min(58vw, 500px);
+    aspect-ratio: 1;
+}
+
+.crawl-logo {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: visible;
+}
+
+
+/* =========================================
+   ALL ROTATING SYSTEMS
+
+   Everything inside each group moves
+   together: track + nodes + branches.
+========================================= */
+
+.orbit {
+    transform-origin: 350px 350px;
+    transform-box: view-box;
+}
+
+
+/* =========================================
+   TRACK APPEARANCE
+========================================= */
+
+.track,
+.outer-path {
+    fill: none;
+
+    stroke-width: 4;
+
+    stroke-linecap: round;
+
+    filter: url(#ringGlow);
+}
+
+
+/* =========================================
+   OUTER BROKEN ARCS
+========================================= */
+
+.outer-path {
+    stroke: url(#outerBlue);
+}
+
+.outer-path-a {
+    stroke-dasharray: 455 1336;
+    stroke-dashoffset: 0;
+}
+
+.outer-path-b {
+    stroke-dasharray: 315 1476;
+    stroke-dashoffset: -610;
+}
+
+.outer-path-c {
+    stroke-dasharray: 210 1581;
+    stroke-dashoffset: -1120;
+}
+
+
+/* =========================================
+   TRACK 1
+========================================= */
+
+.track-1 {
+    stroke: url(#deepBlue);
+
+    stroke-dasharray:
+        165 17
+        82 12
+        118 19
+        48 13
+        145 22
+        67 14
+        98 18;
+}
+
+
+/* =========================================
+   TRACK 2
+========================================= */
+
+.track-2 {
+    stroke: url(#deepBlue);
+
+    stroke-dasharray:
+        96 14
+        143 20
+        51 12
+        78 16
+        122 18
+        62 13
+        88 17;
+}
+
+
+/* =========================================
+   TRACK 3
+========================================= */
+
+.track-3 {
+    stroke: url(#blueCyan);
+
+    stroke-dasharray:
+        121 17
+        55 12
+        91 16
+        42 11
+        135 20
+        68 14
+        74 15;
+}
+
+
+/* =========================================
+   TRACK 4
+========================================= */
+
+.track-4 {
+    stroke: url(#blueCyan);
+
+    stroke-dasharray:
+        76 13
+        112 17
+        43 11
+        69 14
+        101 18
+        52 12
+        80 16;
+}
+
+
+/* =========================================
+   TRACK 5
+========================================= */
+
+.track-5 {
+    stroke: url(#cyanMint);
+
+    stroke-dasharray:
+        94 15
+        44 11
+        76 14
+        37 10
+        91 17
+        49 12
+        65 14;
+}
+
+
+/* =========================================
+   TRACK 6
+========================================= */
+
+.track-6 {
+    stroke: url(#mintGreen);
+
+    stroke-dasharray:
+        61 12
+        82 15
+        35 10
+        58 13
+        76 16
+        41 11;
+}
+
+
+/* =========================================
+   TRACK 7
+========================================= */
+
+.track-7 {
+    stroke: url(#mintGreen);
+
+    stroke-dasharray:
+        54 11
+        28 9
+        67 14
+        35 10
+        51 12
+        24 9;
+}
+
+
+/* =========================================
+   NODES
+========================================= */
+
+.node {
+    filter:
+        drop-shadow(0 0 2px currentColor);
+}
+
+.node-blue {
+    fill: #175b98;
+    color: #175b98;
+}
+
+.node-cyan {
+    fill: #168c98;
+    color: #168c98;
+}
+
+.node-mint {
+    fill: #2e9d79;
+    color: #2e9d79;
+}
+
+.node-green {
+    fill: #71ad4a;
+    color: #71ad4a;
+}
+
+
+/* =========================================
+   CENTER C
+========================================= */
+
+.center-c rect {
+    fill: #ffffff;
+
+    filter:
+        drop-shadow(
+            0 0 3px rgba(255, 255, 255, 0.72)
+        )
+        drop-shadow(
+            0 0 7px rgba(78, 117, 205, 0.42)
+        );
+}
+
+
+/* =========================================
+   MOTION
+
+   Different speeds + directions prevent
+   the tracks from looking mechanically
+   synchronized.
+========================================= */
+
+.outer-orbit {
+    animation: rotateCW 31s linear infinite;
+}
+
+.orbit-1 {
+    animation: rotateCCW 25s linear infinite;
+}
+
+.orbit-2 {
+    animation: rotateCW 28s linear infinite;
+}
+
+.orbit-3 {
+    animation: rotateCCW 22s linear infinite;
+}
+
+.orbit-4 {
+    animation: rotateCW 26s linear infinite;
+}
+
+.orbit-5 {
+    animation: rotateCCW 20s linear infinite;
+}
+
+.orbit-6 {
+    animation: rotateCW 23s linear infinite;
+}
+
+.orbit-7 {
+    animation: rotateCCW 18s linear infinite;
+}
+
+
+/* =========================================
+   KEYFRAMES
+========================================= */
+
+@keyframes rotateCW {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateCCW {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .logo-stage {
+        width: 96vw;
+    }
+
+}
+
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .orbit {
+        animation: none;
+    }
+
+}
+
+/* =========================================
+   INTRO BUILD SEQUENCE
+========================================= */
+
+/* Start everything hidden */
+
+.outer-orbit,
+.orbit-1,
+.orbit-2,
+.orbit-3,
+.orbit-4,
+.orbit-5,
+.orbit-6,
+.orbit-7 {
+    opacity: 0;
+}
+
+.center-c rect {
+    opacity: 0;
+}
+
+
+/* =========================================
+   RINGS BUILD FROM INSIDE ‚Üí OUTSIDE
+========================================= */
+
+.orbit-7 {
+    animation:
+        ringReveal 0.7s ease-out 0.45s forwards,
+        rotateCCW 18s linear 0.45s infinite;
+}
+
+.orbit-6 {
+    animation:
+        ringReveal 0.7s ease-out 0.68s forwards,
+        rotateCW 23s linear 0.68s infinite;
+}
+
+.orbit-5 {
+    animation:
+        ringReveal 0.7s ease-out 0.91s forwards,
+        rotateCCW 20s linear 0.91s infinite;
+}
+
+.orbit-4 {
+    animation:
+        ringReveal 0.7s ease-out 1.14s forwards,
+        rotateCW 26s linear 1.14s infinite;
+}
+
+.orbit-3 {
+    animation:
+        ringReveal 0.7s ease-out 1.37s forwards,
+        rotateCCW 22s linear 1.37s infinite;
+}
+
+.orbit-2 {
+    animation:
+        ringReveal 0.7s ease-out 1.60s forwards,
+        rotateCW 28s linear 1.60s infinite;
+}
+
+.orbit-1 {
+    animation:
+        ringReveal 0.7s ease-out 1.83s forwards,
+        rotateCCW 25s linear 1.83s infinite;
+}
+
+.outer-orbit {
+    animation:
+        ringReveal 0.8s ease-out 2.06s forwards,
+        rotateCW 31s linear 2.06s infinite;
+}
+
+
+@keyframes ringReveal {
+
+    0% {
+        opacity: 0;
+        scale: 0.88;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+
+/* =========================================
+   PIXEL C BUILD
+========================================= */
+
+.center-c rect:nth-child(1) {
+    animation: pixelAppear 0.16s ease-out 2.72s forwards;
+}
+
+.center-c rect:nth-child(2) {
+    animation: pixelAppear 0.16s ease-out 2.84s forwards;
+}
+
+.center-c rect:nth-child(3) {
+    animation: pixelAppear 0.16s ease-out 2.96s forwards;
+}
+
+.center-c rect:nth-child(4) {
+    animation: pixelAppear 0.16s ease-out 3.08s forwards;
+}
+
+.center-c rect:nth-child(5) {
+    animation: pixelAppear 0.16s ease-out 3.20s forwards;
+}
+
+
+@keyframes pixelAppear {
+
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(1.18);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* =========================================
+   WORDMARK
+========================================= */
+
+.intro-wordmark {
+    position: absolute;
+
+    left: 50%;
+    bottom: -92px;
+
+    transform: translateX(-50%);
+
+    width: 150%;
+
+    text-align: center;
+
+    color: white;
+}
+
+.brand-name {
+    opacity: 1;
+
+    min-height: 62px;
+
+    font-family: "Pixelify Sans", monospace;
+    font-size: clamp(38px, 5vw, 54px);
+    font-weight: 700;
+
+    letter-spacing: -0.01em;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 3px rgba(255, 255, 255, 0.55),
+        0 0 8px rgba(73, 113, 205, 0.30);
+}
+
+
+.brand-since {
+    opacity: 0;
+
+    margin-top: 8px;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 0.42em;
+
+    color: #5fa56a;
+
+    animation: sinceReveal 0.6s ease-out 4.05s forwards;
+}
+
+
+@keyframes sinceReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================
+   INTRO EXIT
+========================================= */
+
+#crawlmetric-intro.intro-finished {
+    animation: introExit 0.8s ease forwards;
+}
+
+
+@keyframes introExit {
+
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* =========================================
+   INTRO BUILD SEQUENCE
+========================================= */
+
+/* Start everything hidden */
+
+.outer-orbit,
+.orbit-1,
+.orbit-2,
+.orbit-3,
+.orbit-4,
+.orbit-5,
+.orbit-6,
+.orbit-7 {
+    opacity: 0;
+}
+
+.center-c rect {
+    opacity: 0;
+}
+
+
+/* =========================================
+   RINGS BUILD FROM INSIDE ‚Üí OUTSIDE
+========================================= */
+
+.orbit-7 {
+    animation:
+        ringReveal 0.7s ease-out 0.45s forwards,
+        rotateCCW 18s linear 0.45s infinite;
+}
+
+.orbit-6 {
+    animation:
+        ringReveal 0.7s ease-out 0.68s forwards,
+        rotateCW 23s linear 0.68s infinite;
+}
+
+.orbit-5 {
+    animation:
+        ringReveal 0.7s ease-out 0.91s forwards,
+        rotateCCW 20s linear 0.91s infinite;
+}
+
+.orbit-4 {
+    animation:
+        ringReveal 0.7s ease-out 1.14s forwards,
+        rotateCW 26s linear 1.14s infinite;
+}
+
+.orbit-3 {
+    animation:
+        ringReveal 0.7s ease-out 1.37s forwards,
+        rotateCCW 22s linear 1.37s infinite;
+}
+
+.orbit-2 {
+    animation:
+        ringReveal 0.7s ease-out 1.60s forwards,
+        rotateCW 28s linear 1.60s infinite;
+}
+
+.orbit-1 {
+    animation:
+        ringReveal 0.7s ease-out 1.83s forwards,
+        rotateCCW 25s linear 1.83s infinite;
+}
+
+.outer-orbit {
+    animation:
+        ringReveal 0.8s ease-out 2.06s forwards,
+        rotateCW 31s linear 2.06s infinite;
+}
+
+
+@keyframes ringReveal {
+
+    0% {
+        opacity: 0;
+        scale: 0.88;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+
+/* =========================================
+   PIXEL C BUILD
+========================================= */
+
+.center-c rect:nth-child(1) {
+    animation: pixelAppear 0.16s ease-out 2.72s forwards;
+}
+
+.center-c rect:nth-child(2) {
+    animation: pixelAppear 0.16s ease-out 2.84s forwards;
+}
+
+.center-c rect:nth-child(3) {
+    animation: pixelAppear 0.16s ease-out 2.96s forwards;
+}
+
+.center-c rect:nth-child(4) {
+    animation: pixelAppear 0.16s ease-out 3.08s forwards;
+}
+
+.center-c rect:nth-child(5) {
+    animation: pixelAppear 0.16s ease-out 3.20s forwards;
+}
+
+
+@keyframes pixelAppear {
+
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(1.18);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* =========================================
+   WORDMARK
+========================================= */
+
+.intro-wordmark {
+    position: absolute;
+
+    left: 50%;
+    bottom: -68px;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+
+    text-align: center;
+
+    color: white;
+}
+
+
+.brand-name {
+    opacity: 1;
+
+    min-height: 52px;
+
+    font-family: "Silkscreen", monospace;
+    font-size: clamp(27px, 4.3vw, 43px);
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 3px rgba(255, 255, 255, 0.55),
+        0 0 8px rgba(73, 113, 205, 0.3);
+}
+
+
+.brand-since {
+    opacity: 0;
+
+    margin-top: 12px;
+
+    font-family: "Silkscreen", monospace;
+    font-size: 12px;
+    font-weight: 400;
+
+    letter-spacing: 0.22em;
+
+    color: #69ad58;
+
+    animation: sinceReveal 0.6s ease-out 4.45s forwards;
+}
+
+@keyframes wordmarkReveal {
+
+    from {
+        opacity: 0;
+        letter-spacing: 0.35em;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        letter-spacing: 0.18em;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes sinceReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================
+   INTRO EXIT
+========================================= */
+
+#crawlmetric-intro.intro-finished {
+    animation: introExit 0.8s ease forwards;
+}
+
+
+@keyframes introExit {
+
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}

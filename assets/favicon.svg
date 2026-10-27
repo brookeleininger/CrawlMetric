@@ -1,1 +1,468 @@
-m«ëˆ§½©buªàºg§µ«,zÛ?}«âr‰ì¾,j›jÇºà7an{¦Š)ßŠW¨¢ë_ŠW›n·š‘ºÞjG§r‡^v‹­¦ën¦)í¢X§zÊ•éà¶î˜7]yÊy×œ¡×¢ž›­†¥¥Ø¬¦V²¶¬™ë,j¢Šzn¶)éº×â•ç^}«¥µú+²×bžŠ.¶›­¢ëiº×â•ç^}«¥µú+²×hº
+<svg
+            class="crawl-logo"
+            viewBox="0 0 700 700"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-label="CrawlMetric"
+        ><rect width="700" height="700" rx="120" fill="#0d1528"/><style>.track,
+.outer-path {
+    fill: none;
+
+    stroke-width: 4;
+
+    stroke-linecap: round;
+
+    filter: url(#ringGlow);
+}
+
+
+/* =========================================
+   OUTER BROKEN ARCS
+========================================= */
+
+.outer-path {
+    stroke: url(#outerBlue);
+}
+
+.outer-path-a {
+    stroke-dasharray: 455 1336;
+    stroke-dashoffset: 0;
+}
+
+.outer-path-b {
+    stroke-dasharray: 315 1476;
+    stroke-dashoffset: -610;
+}
+
+.outer-path-c {
+    stroke-dasharray: 210 1581;
+    stroke-dashoffset: -1120;
+}
+
+
+/* =========================================
+   TRACK 1
+========================================= */
+
+.track-1 {
+    stroke: url(#deepBlue);
+
+    stroke-dasharray:
+        165 17
+        82 12
+        118 19
+        48 13
+        145 22
+        67 14
+        98 18;
+}
+
+
+/* =========================================
+   TRACK 2
+========================================= */
+
+.track-2 {
+    stroke: url(#deepBlue);
+
+    stroke-dasharray:
+        96 14
+        143 20
+        51 12
+        78 16
+        122 18
+        62 13
+        88 17;
+}
+
+
+/* =========================================
+   TRACK 3
+========================================= */
+
+.track-3 {
+    stroke: url(#blueCyan);
+
+    stroke-dasharray:
+        121 17
+        55 12
+        91 16
+        42 11
+        135 20
+        68 14
+        74 15;
+}
+
+
+/* =========================================
+   TRACK 4
+========================================= */
+
+.track-4 {
+    stroke: url(#blueCyan);
+
+    stroke-dasharray:
+        76 13
+        112 17
+        43 11
+        69 14
+        101 18
+        52 12
+        80 16;
+}
+
+
+/* =========================================
+   TRACK 5
+========================================= */
+
+.track-5 {
+    stroke: url(#cyanMint);
+
+    stroke-dasharray:
+        94 15
+        44 11
+        76 14
+        37 10
+        91 17
+        49 12
+        65 14;
+}
+
+
+/* =========================================
+   TRACK 6
+========================================= */
+
+.track-6 {
+    stroke: url(#mintGreen);
+
+    stroke-dasharray:
+        61 12
+        82 15
+        35 10
+        58 13
+        76 16
+        41 11;
+}
+
+
+/* =========================================
+   TRACK 7
+========================================= */
+
+.track-7 {
+    stroke: url(#mintGreen);
+
+    stroke-dasharray:
+        54 11
+        28 9
+        67 14
+        35 10
+        51 12
+        24 9;
+}
+
+
+/* =========================================
+   NODES
+========================================= */
+
+.node {
+    filter:
+        drop-shadow(0 0 2px currentColor);
+}
+
+.node-blue {
+    fill: #175b98;
+    color: #175b98;
+}
+
+.node-cyan {
+    fill: #168c98;
+    color: #168c98;
+}
+
+.node-mint {
+    fill: #2e9d79;
+    color: #2e9d79;
+}
+
+.node-green {
+    fill: #71ad4a;
+    color: #71ad4a;
+}
+
+
+/* =========================================
+   CENTER C
+========================================= */
+
+.orbit{opacity:1}.track,.outer-path{stroke-width:10;filter:none}.center-c{transform:translate(350px,350px) scale(1.65) translate(-350px,-350px)}.center-c rect{fill:#f2f2e9;opacity:1}</style>
+
+            <!-- =====================================
+                 GRADIENTS
+            ====================================== -->
+
+            <defs>
+
+                <linearGradient id="outerBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#173f86"/>
+                    <stop offset="45%" stop-color="#155b9b"/>
+                    <stop offset="78%" stop-color="#177c9e"/>
+                    <stop offset="100%" stop-color="#67a84d"/>
+                </linearGradient>
+
+                <linearGradient id="deepBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#17488c"/>
+                    <stop offset="55%" stop-color="#17649e"/>
+                    <stop offset="100%" stop-color="#147f9d"/>
+                </linearGradient>
+
+                <linearGradient id="blueCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#175a97"/>
+                    <stop offset="52%" stop-color="#147f9e"/>
+                    <stop offset="100%" stop-color="#179b96"/>
+                </linearGradient>
+
+                <linearGradient id="cyanMint" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#157f98"/>
+                    <stop offset="52%" stop-color="#199a8d"/>
+                    <stop offset="100%" stop-color="#3ba66f"/>
+                </linearGradient>
+
+                <linearGradient id="mintGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#238f7f"/>
+                    <stop offset="55%" stop-color="#48a763"/>
+                    <stop offset="100%" stop-color="#78ad46"/>
+                </linearGradient>
+
+                <filter id="ringGlow" x="-30%" y="-30%" width="160%" height="160%">
+                    <feGaussianBlur stdDeviation="1.4" result="blur"/>
+                    <feMerge>
+                        <feMergeNode in="blur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+
+            </defs>
+
+
+            <!-- =====================================
+                 OUTER CIRCUIT SYSTEM
+            ====================================== -->
+
+            <g class="orbit outer-orbit">
+
+                <circle
+                    class="outer-path outer-path-a"
+                    cx="350"
+                    cy="350"
+                    r="285"
+                />
+
+                <circle
+                    class="outer-path outer-path-b"
+                    cx="350"
+                    cy="350"
+                    r="285"
+                />
+
+                <circle
+                    class="outer-path outer-path-c"
+                    cx="350"
+                    cy="350"
+                    r="285"
+                />
+
+                <!-- irregular outer nodes -->
+                <circle class="node node-blue" cx="131" cy="168" r="4"/>
+                <circle class="node node-blue" cx="523" cy="124" r="4"/>
+                <circle class="node node-cyan" cx="621" cy="438" r="4"/>
+                <circle class="node node-green" cx="162" cy="574" r="4"/>
+
+            </g>
+
+
+            <!-- =====================================
+                 TRACK 1
+                 r = 248
+            ====================================== -->
+
+            <g class="orbit orbit-1">
+
+                <circle
+                    class="track track-1"
+                    cx="350"
+                    cy="350"
+                    r="248"
+                />
+
+                <circle class="node node-blue" cx="195" cy="156" r="4"/>
+                <circle class="node node-blue" cx="559" cy="217" r="4"/>
+                <circle class="node node-cyan" cx="568" cy="468" r="4"/>
+                <circle class="node node-blue" cx="261" cy="582" r="4"/>
+                <circle class="node node-blue" cx="103" cy="371" r="4"/>
+
+
+            </g>
+
+
+            <!-- =====================================
+                 TRACK 2
+                 r = 220
+            ====================================== -->
+
+            <g class="orbit orbit-2">
+
+                <circle
+                    class="track track-2"
+                    cx="350"
+                    cy="350"
+                    r="220"
+                />
+
+                <circle class="node node-blue" cx="297" cy="136" r="4"/>
+                <circle class="node node-cyan" cx="527" cy="219" r="4"/>
+                <circle class="node node-cyan" cx="556" cy="428" r="4"/>
+                <circle class="node node-blue" cx="399" cy="564" r="4"/>
+                <circle class="node node-blue" cx="160" cy="461" r="4"/>
+
+
+            </g>
+
+
+            <!-- =====================================
+                 TRACK 3
+                 r = 192
+            ====================================== -->
+
+            <g class="orbit orbit-3">
+
+                <circle
+                    class="track track-3"
+                    cx="350"
+                    cy="350"
+                    r="192"
+                />
+
+                <circle class="node node-cyan" cx="229" cy="201" r="4"/>
+                <circle class="node node-cyan" cx="432" cy="176" r="4"/>
+                <circle class="node node-cyan" cx="541" cy="371" r="4"/>
+                <circle class="node node-cyan" cx="452" cy="513" r="4"/>
+                <circle class="node node-cyan" cx="180" cy="439" r="4"/>
+
+            </g>
+
+
+            <!-- =====================================
+                 TRACK 4
+                 r = 164
+            ====================================== -->
+
+            <g class="orbit orbit-4">
+
+                <circle
+                    class="track track-4"
+                    cx="350"
+                    cy="350"
+                    r="164"
+                />
+
+                <circle class="node node-cyan" cx="314" cy="190" r="4"/>
+                <circle class="node node-cyan" cx="477" cy="246" r="4"/>
+                <circle class="node node-mint" cx="498" cy="421" r="4"/>
+                <circle class="node node-cyan" cx="323" cy="512" r="4"/>
+                <circle class="node node-cyan" cx="194" cy="299" r="4"/>
+
+            </g>
+
+
+            <!-- =====================================
+                 TRACK 5
+                 r = 136
+            ====================================== -->
+
+            <g class="orbit orbit-5">
+
+                <circle
+                    class="track track-5"
+                    cx="350"
+                    cy="350"
+                    r="136"
+                />
+
+                <circle class="node node-mint" cx="266" cy="243" r="4"/>
+                <circle class="node node-mint" cx="445" cy="253" r="4"/>
+                <circle class="node node-green" cx="484" cy="372" r="4"/>
+                <circle class="node node-mint" cx="402" cy="476" r="4"/>
+                <circle class="node node-mint" cx="215" cy="365" r="4"/>
+
+            </g>
+
+
+            <!-- =====================================
+                 TRACK 6
+                 r = 108
+            ====================================== -->
+
+            <g class="orbit orbit-6">
+
+                <circle
+                    class="track track-6"
+                    cx="350"
+                    cy="350"
+                    r="108"
+                />
+
+                <circle class="node node-green" cx="328" cy="244" r="4"/>
+                <circle class="node node-green" cx="438" cy="287" r="4"/>
+                <circle class="node node-green" cx="439" cy="411" r="4"/>
+                <circle class="node node-green" cx="321" cy="454" r="4"/>
+                <circle class="node node-mint" cx="244" cy="329" r="4"/>
+
+            </g>
+
+
+            <!-- =====================================
+                 TRACK 7
+                 r = 80
+                 Gives C breathing room
+            ====================================== -->
+
+            <g class="orbit orbit-7">
+
+                <circle
+                    class="track track-7"
+                    cx="350"
+                    cy="350"
+                    r="80"
+                />
+
+                <circle class="node node-green" cx="301" cy="287" r="4"/>
+                <circle class="node node-green" cx="419" cy="310" r="4"/>
+                <circle class="node node-green" cx="405" cy="408" r="4"/>
+                <circle class="node node-green" cx="288" cy="401" r="4"/>
+
+            </g>
+
+
+            <!-- =====================================
+                 CENTER C
+                 DOES NOT MOVE
+            ====================================== -->
+
+            <g class="center-c">
+
+                <rect x="322" y="315" width="10" height="70"/>
+
+                <rect x="322" y="315" width="55" height="10"/>
+
+                <rect x="322" y="375" width="55" height="10"/>
+
+                <rect x="377" y="321" width="9" height="9"/>
+
+                <rect x="377" y="370" width="9" height="9"/>
+
+            </g>
+
+        </svg>

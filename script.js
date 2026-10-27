@@ -1,1 +1,35 @@
-m«ëˆ§½©buªàºg§¶Ç+Š›c±KæÚ±î¸Ø[žé¢Šwâ•ê(º×â•æÛ­æ¤n·š‘éÜ¡×¢ëiºÛ©Š{h–)Þ²‡åzx-†{¦×^r‡^uç(uè§¦ëa…éiv+)•¬­†+&zËè¢ž›­Šznµø¥y×Ÿjém~ŠìµØ§¢‹­¦ëhºÚnµø¥y×Ÿjém~ŠìµÚ.
+document.addEventListener("DOMContentLoaded", () => {
+
+    const intro = document.getElementById("crawlmetric-intro");
+    const brandName = document.getElementById("brand-name");
+
+    const text = "CRAWLMETRIC";
+
+    let index = 0;
+
+    // Start typing after the C finishes building
+    setTimeout(() => {
+
+        const typing = setInterval(() => {
+
+            brandName.textContent += text[index];
+
+            index++;
+
+            if (index >= text.length) {
+                clearInterval(typing);
+            }
+
+        }, 140);
+
+    }, 3350);
+
+
+    // Fade intro away
+    setTimeout(() => {
+
+        intro.classList.add("intro-finished");
+
+    }, 6500);
+
+});

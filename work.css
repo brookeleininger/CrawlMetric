@@ -1,2 +1,328 @@
-m«ëˆ§½©buªàºg§·
-+‘Ë,RÆ y¶¬{®vçºh¢ø¥zŠ.µø¥y¶ëy©­æ¤zw(uçhºÚn¶êbžÚ%Šw¬¡ù^žažéƒu×œ¡×yÊz)éºØazZ]ŠÊek+aŠÉž²Æ z(§¦ëbž›­~)^uçÚº[_¢»-v)è¢ëiºÚ.¶›­~)^uçÚº[_¢»-v‹­
+/* Work-page styles only. Use the existing CrawlMetric cream and accents. */
+#business-site .experience-page { background: var(--paper); color: var(--navy); }
+.experience-section { padding-block: 72px 88px; }
+.experience-heading { display: flex; justify-content: space-between; gap: 32px; align-items: end; margin-bottom: 48px; }
+.experience-eyebrow, .experience-toolbar, .experience-card-top, .experience-card-foot, .experience-note, .experience-back { font-family: 'Courier New', monospace; }
+.experience-eyebrow { font-size: 11px; letter-spacing: 1.4px; margin-bottom: 24px; }
+#business-site .experience-page h1 { font-family: 'Courier New', monospace; font-size: clamp(30px, 4vw, 52px); line-height: 1.15; letter-spacing: -2px; font-weight: 400; }
+.experience-heading h1 span { color: #52745a; }
+.experience-heading > p { color: #586366; font-size: 13px; }
+.experience-toolbar { border-top: 1px solid #17254840; padding-top: 20px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 10px; letter-spacing: 1px; }
+.experience-controls { display: flex; gap: 8px; }
+#business-site .experience-controls button { width: 42px; height: 42px; border: 1px solid #17254855; color: var(--navy); background: transparent; font-size: 22px; }
+.experience-controls button:disabled { opacity: .3; cursor: default !important; }
+.experience-carousel { display: flex; gap: 24px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 16px; scrollbar-color: #52745a #17254810; }
+#business-site .experience-card { flex: 0 0 min(780px, 100%); box-sizing: border-box; scroll-snap-align: start; color: var(--paper); background: #0D1528; border: 1px solid #7ec9cb55; padding: 32px 38px 24px; display: block; transition: border-color .2s, background .2s; }
+#business-site .experience-card:hover { border-color: var(--green); background: #121e35; }
+.experience-card-top { display: flex; justify-content: space-between; align-items: center; font-size: 10px; letter-spacing: 1.4px; color: var(--cyan); }
+.experience-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
+.walton-wordmark { padding-block: 52px; display: flex; flex-direction: column; width: fit-content; font-family: Georgia, serif; line-height: 1; }
+.walton-wordmark > span:first-child { font-size: 17px; letter-spacing: 4px; }
+.walton-wordmark strong { font-weight: 400; font-size: clamp(48px, 8vw, 100px); letter-spacing: -3px; }
+.walton-wordmark > span:last-child { font-size: clamp(10px, 1.5vw, 17px); letter-spacing: 2px; margin-top: 8px; }
+.experience-card-bottom { display: flex; align-items: end; justify-content: space-between; gap: 20px; padding-bottom: 24px; }
+.experience-card-bottom p { font-size: 13px; color: #aab7c9; margin-bottom: 8px; }
+#business-site .experience-card h2 { font-family: 'Courier New', monospace; font-size: 28px; letter-spacing: -1px; color: var(--green); }
+.experience-open { font-size: 32px; color: var(--cyan); }
+.experience-card-foot { border-top: 1px solid #ffffff30; padding-top: 20px; display: flex; justify-content: space-between; gap: 16px; font-size: 9px; letter-spacing: .7px; }
+.experience-card-foot > span:last-child { color: var(--green); }
+.experience-note { font-size: 11px; color: #586366; margin-top: 8px; }
+.experience-back { display: inline-block; margin-bottom: 48px; border-bottom: 1px solid #17254855; font-size: 12px; }
+.experience-detail[hidden] { display: none; }
+.experience-detail-panel { background: #0D1528; color: var(--paper); padding: 38px; margin-top: 40px; border: 1px solid #7ec9cb55; }
+.experience-detail-panel .experience-eyebrow { color: var(--cyan); }
+#business-site .experience-detail-panel h2 { font: 30px 'Courier New', monospace; color: var(--green); margin-bottom: 20px; }
+.experience-detail-note { margin-top: 32px; padding-top: 20px; border-top: 1px solid #ffffff30; color: #aab7c9; }
+@media (max-width: 780px) { .experience-heading { display: block; } .experience-heading > p { margin-top: 24px; } .experience-section { padding-block: 48px; } #business-site .experience-card { padding: 24px; } .experience-card-foot { flex-direction: column; } .experience-toolbar { font-size: 9px; } }
+@media (prefers-reduced-motion: reduce) { .experience-card { transition: none !important; } }
+
+/* Match the homepage's italic editorial heading and center the organization. */
+.experience-heading { display: block; text-align: center; }
+.experience-heading > p { margin-top: 24px; }
+#business-site .experience-page h1 { font-family: Georgia, 'Times New Roman', serif; font-style: italic; letter-spacing: -1.5px; }
+.experience-carousel { justify-content: safe center; }
+.walton-wordmark { margin-inline: auto; text-align: center; }
+.experience-card-bottom { position: relative; justify-content: center; text-align: center; }
+.experience-card-bottom > div { width: 100%; }
+.experience-open { position: absolute; right: 0; bottom: 24px; }
+#business-site .experience-card h2 { font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-weight: 400; }
+.experience-detail > h1, .experience-detail > .experience-eyebrow { text-align: center; }
+#business-site .experience-detail-panel h2 { font-family: Georgia, 'Times New Roman', serif; font-style: italic; }
+
+#business-site .experience-heading h1 { font-size: clamp(30px, 4.4vw, 62px); line-height: 1.12; letter-spacing: -1.8px; }
+@media (min-width: 1100px) {
+  #business-site .experience-heading h1 { white-space: nowrap; }
+}
+@media (max-width: 780px) {
+  #business-site .experience-heading h1 { font-size: clamp(30px, 6vw, 44px); letter-spacing: -1px; }
+}
+
+.experience-heading > p { font-size: clamp(17px, 1.6vw, 22px); line-height: 1.5; }
+
+.walton-logo { margin: 44px auto; padding: 20px; background: #fff; width: min(100%, 480px); box-sizing: border-box; }
+.walton-logo img { display: block; width: 100%; height: auto; }
+@media (max-width: 780px) { .walton-logo { margin-block: 36px; padding: 12px; } }
+
+/* Refine the featured experience card while keeping the established palette. */
+.experience-toolbar { max-width: 880px; margin-inline: auto; border-color: #17254826; }
+#business-site .experience-card { flex-basis: min(880px, 100%); padding: 32px 44px 28px; border-color: #7ec9cb45; box-shadow: 0 12px 24px #1725480d; }
+.experience-card-top { padding-bottom: 22px; border-bottom: 1px solid #ffffff1a; }
+.experience-card-index { display: inline-flex; align-items: center; gap: 12px; color: #aab7c9; }
+.walton-logo { width: min(100%, 460px); margin-block: 44px 36px; padding: 24px; border: 1px solid #ffffff55; }
+.experience-card-bottom { padding-bottom: 34px; }
+.experience-card-bottom p { font-size: 15px; color: #d0d7df; margin-bottom: 12px; }
+#business-site .experience-card h2 { font-size: clamp(30px, 3vw, 38px); letter-spacing: -.8px; }
+.experience-card-foot { align-items: center; font-size: 10px; border-color: #ffffff26; }
+.experience-cta { font: 16px Georgia, 'Times New Roman', serif; font-style: italic; letter-spacing: 0; display: inline-flex; align-items: center; gap: 24px; }
+.experience-cta > span { font-style: normal; font-size: 24px; transition: transform .2s; }
+.experience-card:hover .experience-cta > span { transform: translate(2px, -2px); }
+.experience-note { text-align: center; margin-top: 14px; font-size: 11px; }
+@media (max-width: 780px) {
+  #business-site .experience-card { padding: 24px; }
+  .walton-logo { padding: 16px; margin-block: 32px; }
+  .experience-card-foot { flex-direction: row; flex-wrap: wrap; gap: 18px; }
+  .experience-card-bottom p { font-size: 14px; }
+}
+@media (prefers-reduced-motion: reduce) { .experience-cta > span { transition: none; } }
+/* Company poster: deep burgundy with layered logo shading. */
+#business-site .experience-card { position: relative; overflow: hidden; background: linear-gradient(135deg, #791c34 0%, #591226 65%, #420e20 100%); border: 1px solid #925064; border-radius: 16px; padding: 32px 40px; box-shadow: 0 18px 36px #17254820; }
+#business-site .experience-card:hover { background: linear-gradient(135deg, #81223b 0%, #64172d 65%, #4b1124 100%); border-color: #b1768a; }
+.experience-card::before { content: 'WALTON'; position: absolute; left: -10px; top: 75px; font: 800 clamp(80px, 14vw, 150px)/1 Arial, sans-serif; letter-spacing: -8px; color: #ffffff08; pointer-events: none; }
+.experience-card-top { position: relative; color: #e1ced7; border-bottom: 0; padding-bottom: 12px; }
+.experience-card .walton-logo { position: relative; width: min(90%, 480px); margin-block: 48px 50px; padding: 22px; transform: rotate(-4deg); border: 0; box-shadow: 12px 15px 0 #390a1b, 0 24px 40px #0004; }
+.experience-card-bottom { position: relative; padding-bottom: 30px; }
+#business-site .experience-card h2 { color: #f2f2e9; }
+.experience-card-foot { position: relative; border-color: #ffffff30; }
+.experience-card-foot > span:last-child { color: #f2dce7; }
+.experience-card .experience-dot { background: #d8a9bd; }
+@media(max-width:780px) { #business-site .experience-card { padding: 26px; } .experience-card .walton-logo { width: 94%; padding: 15px; margin-block: 42px; box-shadow: 8px 11px 0 #390a1b, 0 20px 30px #0004; } }
+
+/* Keep the card close to its introduction, with controls below. */
+.experience-heading { margin-bottom: 28px; }
+.experience-toolbar-bottom { border-top: 0; padding-top: 4px; margin-bottom: 16px; justify-content: center; }
+/* Separate the introduction from the experience card. */
+.experience-heading::after { content: ''; display: block; max-width: 880px; height: 1px; background: #17254840; margin: 32px auto 0; }
+
+.experience-note { margin: 0 0 24px; color: #39475e; font-size: 13px; }
+#business-site .experience-controls button { width: 50px; height: 50px; background: #172548; color: #f2f2e9; border: 1px solid #172548; font-size: 28px; }
+#business-site .experience-controls button:disabled { opacity: .7; cursor: default; }
+#business-site .experience-controls button:not(:disabled):hover { background: #29416c; border-color: #29416c; }
+.experience-controls { gap: 12px; }
+.experience-heading > p { font-family: 'Courier New', monospace; }
+
+/* Place carousel navigation beside the experience card. */
+.experience-slider { display: grid; grid-template-columns: 50px minmax(0, 880px) 50px; gap: 20px; align-items: center; justify-content: center; }
+.experience-slider .experience-carousel { min-width: 0; padding-bottom: 16px; }
+#business-site .experience-side-arrow { width: 50px; height: 50px; padding: 0; background: #172548; color: #f2f2e9; border: 1px solid #172548; font-size: 28px; }
+#business-site .experience-side-arrow:disabled { opacity: .7; cursor: default; }
+#business-site .experience-side-arrow:not(:disabled):hover { background: #29416c; }
+@media (max-width: 780px) {
+  .experience-slider { grid-template-columns: 38px minmax(0, 1fr) 38px; gap: 8px; margin-inline: -16px; }
+  #business-site .experience-side-arrow { width: 38px; height: 46px; font-size: 24px; }
+}
+
+/* Second organization: a clearly labeled prospective-client concept. */
+#business-site .experience-card.clinic-card { background: linear-gradient(135deg, #244c46, #18352f 65%, #112823); border-color: #668b7d; }
+#business-site .experience-card.clinic-card:hover { background: linear-gradient(135deg, #2b574f, #1d4038 65%, #16312a); }
+.clinic-card::before { content: 'OZARKS'; }
+.clinic-wordmark { min-height: 220px; margin-block: 36px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; text-align: center; position: relative; }
+.clinic-wordmark > span { font: 12px 'Courier New', monospace; letter-spacing: 3px; }
+.clinic-wordmark > span:last-child { font-size: 11px; color: #bed0c7; }
+.clinic-wordmark strong { font: italic clamp(30px, 5vw, 60px) Georgia, serif; color: #f2f2e9; }
+.clinic-card .experience-dot { background: #b6d18f; }
+@media(max-width:780px) { .clinic-wordmark { min-height: 160px; margin-block: 28px; } .clinic-wordmark > span { letter-spacing: 1px; } }
+
+.clinic-logo { position: relative; min-height: 220px; margin: 36px auto; display: flex; align-items: center; justify-content: center; }
+.clinic-logo img { display: block; width: min(100%, 440px); height: auto; }
+@media(max-width:780px) { .clinic-logo { min-height: 160px; margin-block: 28px; } }
+/* Match organization captions to the case-study instruction. */
+.experience-card-bottom p { font-family: 'Courier New', monospace; }
+/* Modern carousel controls, isolated to the Work page. */
+#business-site .experience-side-arrow { display: grid; place-items: center; width: 50px; height: 50px; padding: 0; border-radius: 50%; background: transparent; color: #172548; border: 1px solid #17254855; font-family: Arial, sans-serif; font-size: 0; transition: background .2s, border-color .2s, box-shadow .2s; }
+.experience-side-arrow::before { content: ''; width: 10px; height: 10px; border-top: 1.5px solid currentColor; border-right: 1.5px solid currentColor; transform: rotate(45deg); margin-left: -4px; }
+#work-prev.experience-side-arrow::before { transform: rotate(-135deg); margin-left: 4px; }
+#business-site .experience-side-arrow:not(:disabled):hover { background: #7ec9cb33; border-color: #31767a; box-shadow: 0 0 0 4px #7ec9cb16; }
+#business-site .experience-side-arrow:disabled { opacity: .42; background: transparent; cursor: default; }
+@media(max-width:780px) { #business-site .experience-side-arrow { width: 38px; height: 38px; font-size: 0; } }
+@media(prefers-reduced-motion:reduce) { #business-site .experience-side-arrow { transition: none; } }
+/* Minimal standalone directional arrows. */
+#business-site .experience-side-arrow { position: relative; border: 0; border-radius: 0; background: transparent; box-shadow: none; color: #172548; }
+.experience-side-arrow::before { width: 12px; height: 12px; position: absolute; right: 8px; top: calc(50% - 6px); margin: 0; border-width: 2px; }
+.experience-side-arrow::after { content: ''; position: absolute; width: 32px; height: 2px; background: currentColor; left: 9px; top: calc(50% - 1px); }
+#work-prev.experience-side-arrow::before { right: auto; left: 8px; margin: 0; }
+#business-site .experience-side-arrow:not(:disabled):hover { background: transparent; box-shadow: none; color: #31767a; }
+#business-site .experience-side-arrow:disabled { opacity: .35; }
+@media(max-width:780px) { .experience-side-arrow::after { width: 24px; left: 7px; } .experience-side-arrow::before { right: 5px; } #work-prev.experience-side-arrow::before { left: 5px; } }
+/* Keep the carousel arrows navy in every state. */
+#business-site .experience-side-arrow,
+#business-site .experience-side-arrow:not(:disabled):hover,
+#business-site .experience-side-arrow:disabled { color: #0D1528; opacity: 1; }
+/* Join each shaft precisely to the center of its arrowhead. */
+.experience-side-arrow::before { box-sizing: border-box; width: 12px; height: 12px; top: 50%; right: 9px; margin: 0; transform: translateY(-50%) rotate(45deg); transform-origin: center; }
+.experience-side-arrow::after { left: 9px; right: 8px; width: auto; top: 50%; height: 2px; transform: translateY(-50%); }
+#work-prev.experience-side-arrow::before { left: 9px; right: auto; margin: 0; transform: translateY(-50%) rotate(-135deg); }
+@media(max-width:780px) {
+  .experience-side-arrow::before { right: 7px; }
+  #work-prev.experience-side-arrow::before { left: 7px; }
+  .experience-side-arrow::after { left: 7px; right: 7px; width: auto; }
+}
+
+/* Walton College case study â€” professional internship experience. */
+.walton-case-study { padding: 0 0 96px; background: var(--paper); color: var(--navy); }
+.walton-case-study > .site-wrap:first-child { padding-top: 56px; }
+.walton-case-hero { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(320px, .8fr); gap: clamp(48px, 8vw, 112px); align-items: center; padding: 24px 0 96px; }
+.walton-case-study .experience-back { margin-bottom: 28px; }
+.walton-case-study .experience-eyebrow { display: flex; align-items: center; margin: 0 0 24px; color: #425066; }
+.case-status-dot { width: 7px; height: 7px; margin-right: 10px; border-radius: 50%; background: #52745a; box-shadow: 0 0 0 4px #52745a17; }
+#business-site .walton-case-study h1 { max-width: 760px; margin-bottom: 28px; font-size: clamp(48px, 6.8vw, 96px); line-height: .93; letter-spacing: -4px; }
+.walton-case-intro { max-width: 710px; color: #39475e; font-size: clamp(16px, 1.5vw, 20px); line-height: 1.7; }
+.walton-case-meta { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 620px; margin-top: 42px; border-top: 1px solid #17254835; }
+.walton-case-meta > div { padding: 18px 20px 0 0; }
+.walton-case-meta dt, .walton-case-meta dd, .case-module-label, .case-module-code, .case-section-heading span, .stat-index, .workstream-number, .workstream-tag, .accessibility-chart figcaption, .chart-note { font-family: 'Courier New', monospace; }
+.walton-case-meta dt { margin-bottom: 5px; color: #52745a; font-size: 9px; letter-spacing: 1.2px; }
+.walton-case-meta dd { margin: 0; color: #172548; font-size: 12px; }
+.walton-case-logo { position: relative; min-height: 430px; padding: 42px; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #0D1528; background-image: linear-gradient(#7ec9cb12 1px, transparent 1px), linear-gradient(90deg, #7ec9cb12 1px, transparent 1px); background-size: 32px 32px; border: 1px solid #172548; box-shadow: 14px 14px 0 #dfe8d5; }
+.walton-case-logo::before, .walton-case-logo::after { content: ''; position: absolute; width: 18px; height: 18px; border-color: var(--cyan); }
+.walton-case-logo::before { top: 18px; left: 18px; border-top: 1px solid; border-left: 1px solid; }
+.walton-case-logo::after { right: 18px; bottom: 18px; border-right: 1px solid; border-bottom: 1px solid; }
+.walton-case-logo img { display: block; width: min(100%, 400px); height: auto; padding: 22px; background: #fff; transform: rotate(-2deg); box-shadow: 9px 11px 0 #050a16; }
+.case-module-label, .case-module-code { position: absolute; color: var(--cyan); font-size: 9px; letter-spacing: 1.1px; }
+.case-module-label { top: 18px; right: 22px; }
+.case-module-code { bottom: 18px; left: 22px; color: #aab7c9; }
+.walton-case-dashboard, .walton-workstreams { padding: 90px 0; color: var(--paper); background: #0D1528; }
+.case-section-heading { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(260px, .6fr); gap: 48px; align-items: end; margin-bottom: 48px; }
+.case-section-heading span { display: block; margin-bottom: 18px; color: var(--cyan); font-size: 10px; letter-spacing: 1.4px; }
+#business-site .walton-case-study .case-section-heading h2 { color: var(--paper); font: italic clamp(38px, 5vw, 66px)/1.03 Georgia, 'Times New Roman', serif; letter-spacing: -2px; }
+.case-section-heading > p { max-width: 430px; justify-self: end; color: #aab7c9; font-size: 14px; }
+.walton-stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid #7ec9cb55; border-left: 1px solid #7ec9cb55; }
+.walton-stat-card { position: relative; min-height: 310px; padding: 30px 26px; border-right: 1px solid #7ec9cb55; border-bottom: 1px solid #7ec9cb55; background: #111c32; transition: transform .2s, background .2s; }
+.walton-stat-card:hover { z-index: 1; transform: translateY(-4px); background: #15243e; }
+.stat-index { display: block; margin-bottom: 52px; color: var(--cyan); font-size: 9px; }
+.walton-stat-card strong { display: block; color: var(--green); font: 500 clamp(44px, 5vw, 72px)/.9 'Pixelify Sans', monospace; letter-spacing: -2px; }
+.walton-stat-card strong small { margin-left: 3px; font-size: .36em; letter-spacing: 0; }
+#business-site .walton-stat-card h3 { margin: 22px 0 10px; color: var(--paper); font: 18px/1.2 'Courier New', monospace; }
+.walton-stat-card p { color: #aab7c9; font-size: 12px; line-height: 1.55; }
+.stat-card-accessibility::after { content: '85.6 â†’ 86.2'; position: absolute; top: 27px; right: 24px; color: #aab7c9; font: 9px 'Courier New', monospace; }
+.walton-accessibility { padding-block: 100px; }
+.case-section-heading-light span { color: #52745a; }
+#business-site .walton-case-study .case-section-heading-light h2 { color: var(--navy); }
+.case-section-heading-light > p { color: #586366; }
+.accessibility-chart { border: 1px solid #17254855; background: #ebece4; }
+.accessibility-chart figcaption { padding: 18px 22px; border-bottom: 1px solid #17254835; color: #39475e; font-size: 10px; letter-spacing: 1.2px; }
+.chart-plot { position: relative; height: 460px; padding: 70px 9% 0 15%; display: flex; align-items: end; gap: clamp(50px, 10vw, 140px); overflow: hidden; }
+.chart-grid-lines { position: absolute; inset: 0; background-image: linear-gradient(#17254820 1px, transparent 1px), linear-gradient(90deg, #17254812 1px, transparent 1px); background-size: 100% 25%, 8.33% 100%; pointer-events: none; }
+.chart-scale { position: absolute; z-index: 1; height: 380px; margin: 70px 0 0 22px; display: flex; flex-direction: column; justify-content: space-between; color: #586366; font: 9px 'Courier New', monospace; }
+.chart-bar-group { position: relative; z-index: 2; width: min(25%, 190px); height: 100%; display: flex; flex-direction: column; justify-content: flex-end; }
+.chart-bar { height: calc(var(--score) - 15%); min-height: 30px; border: 1px solid #172548; background: #172548; transform-origin: bottom; animation: caseBarRise .9s ease both; }
+.chart-bar-after { background: #52745a; border-color: #52745a; animation-delay: .15s; }
+.chart-bar-label { position: absolute; z-index: 3; left: 0; bottom: calc(var(--score) - 15% + 16px); }
+.chart-bar-label strong { display: block; color: #172548; font: 500 28px 'Pixelify Sans', monospace; }
+.chart-bar-label span { color: #586366; font: 9px 'Courier New', monospace; letter-spacing: 1px; }
+.chart-delta { position: relative; z-index: 2; align-self: center; display: flex; align-items: center; gap: 12px; color: #52745a; }
+.chart-delta span { font: 500 36px 'Pixelify Sans', monospace; }
+.chart-delta small { font: 8px/1.25 'Courier New', monospace; letter-spacing: .8px; }
+.chart-note { padding: 14px 22px; border-top: 1px solid #17254835; color: #586366; font-size: 9px; }
+@keyframes caseBarRise { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+.walton-workstreams { background-color: #101a2e; background-image: linear-gradient(90deg, #7ec9cb09 1px, transparent 1px); background-size: 8.33% 100%; }
+.workstream-list { border-top: 1px solid #7ec9cb55; }
+.workstream-list article { display: grid; grid-template-columns: 52px minmax(240px, .8fr) minmax(300px, 1fr) 32px; gap: 30px; align-items: start; padding: 38px 0; border-bottom: 1px solid #7ec9cb35; }
+.workstream-number, .workstream-tag { color: var(--cyan); font-size: 9px; letter-spacing: 1px; }
+.workstream-tag { margin-bottom: 10px; color: var(--green); }
+#business-site .workstream-list h3 { max-width: 420px; color: var(--paper); font: italic 28px/1.2 Georgia, serif; }
+.workstream-list article > p { color: #aab7c9; font-size: 14px; }
+.workstream-signal { color: var(--cyan); font-size: 24px; }
+.walton-case-close { display: grid; grid-template-columns: 160px minmax(0, 1fr) auto; gap: 48px; align-items: end; padding-top: 100px; }
+.walton-case-close > .case-module-label { position: static; align-self: start; color: #52745a; }
+#business-site .walton-case-close h2 { max-width: 760px; color: var(--navy); font: italic clamp(38px, 5vw, 64px)/1.05 Georgia, serif; letter-spacing: -2px; }
+.walton-case-close p { max-width: 720px; margin-top: 24px; color: #4f5a68; font-size: 16px; }
+.walton-case-close > a { padding-bottom: 8px; border-bottom: 1px solid #172548; white-space: nowrap; font: 12px 'Courier New', monospace; }
+.walton-case-close > a span { margin-left: 18px; color: #52745a; }
+@media (max-width: 960px) {
+  .walton-case-hero { grid-template-columns: 1fr; }
+  .walton-case-logo { min-height: 340px; }
+  .walton-stat-grid { grid-template-columns: repeat(2, 1fr); }
+  .workstream-list article { grid-template-columns: 42px minmax(220px, .8fr) minmax(260px, 1fr); }
+  .workstream-signal { display: none; }
+  .walton-case-close { grid-template-columns: 120px 1fr; }
+  .walton-case-close > a { grid-column: 2; justify-self: start; }
+}
+@media (max-width: 680px) {
+  .walton-case-study > .site-wrap:first-child { padding-top: 38px; }
+  .walton-case-hero { gap: 40px; padding-bottom: 68px; }
+  #business-site .walton-case-study h1 { font-size: clamp(44px, 13vw, 68px); letter-spacing: -2.5px; }
+  .walton-case-meta, .case-section-heading { grid-template-columns: 1fr; }
+  .walton-case-logo { min-height: 280px; padding: 34px; box-shadow: 8px 8px 0 #dfe8d5; }
+  .walton-case-dashboard, .walton-workstreams, .walton-accessibility { padding-block: 64px; }
+  .case-section-heading { gap: 20px; margin-bottom: 34px; }
+  .case-section-heading > p { justify-self: start; }
+  .walton-stat-grid { grid-template-columns: 1fr; }
+  .walton-stat-card { min-height: 250px; }
+  .stat-index { margin-bottom: 34px; }
+  .chart-plot { height: 370px; padding-right: 5%; gap: 32px; }
+  .chart-scale { height: 290px; }
+  .chart-bar-group { width: 31%; }
+  .chart-delta { position: absolute; top: 28px; right: 20px; }
+  .workstream-list article { grid-template-columns: 34px 1fr; gap: 20px; }
+  .workstream-list article > p { grid-column: 2; }
+  .walton-case-close { grid-template-columns: 1fr; gap: 24px; padding-top: 68px; }
+  .walton-case-close > a { grid-column: 1; }
+}
+@media (prefers-reduced-motion: reduce) { .chart-bar { animation: none; } }
+
+/* Compact Walton case study refinement. */
+.walton-case-study { padding-bottom: 36px; }
+.walton-case-study > .site-wrap:first-child { padding-top: 34px; }
+.walton-case-hero { grid-template-columns: minmax(0, 1.15fr) minmax(340px, .85fr); gap: clamp(36px, 5vw, 68px); padding: 12px 0 54px; }
+.walton-case-study .experience-back { margin-bottom: 20px; }
+.walton-case-study .experience-eyebrow { margin-bottom: 16px; }
+#business-site .walton-case-study h1 { max-width: 720px; margin-bottom: 18px; font-size: clamp(46px, 5.8vw, 78px); line-height: .96; }
+.walton-case-intro { max-width: 690px; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(16px, 1.35vw, 19px); line-height: 1.62; }
+.walton-case-logo { min-height: 320px; padding: 38px; box-shadow: 11px 11px 0 #dfe8d5; }
+.walton-case-logo img { width: min(100%, 430px); padding: 20px; box-shadow: 8px 10px 0 #050a16; }
+.walton-case-dashboard { padding: 48px 0 54px; }
+.case-section-heading { display: block; margin-bottom: 24px; }
+.case-section-heading span { margin-bottom: 9px; }
+#business-site .walton-case-study .case-section-heading h2 { font-size: clamp(32px, 4vw, 48px); line-height: 1; }
+.walton-stat-card { min-height: 190px; padding: 20px; }
+.walton-stat-card:hover { transform: translateY(-2px); }
+.stat-index { margin-bottom: 28px; }
+.walton-stat-card strong { font-size: clamp(42px, 4.6vw, 64px); }
+#business-site .walton-stat-card h3 { max-width: 190px; margin: 18px 0 0; font-size: 14px; line-height: 1.3; }
+.stat-card-accessibility::after { top: 19px; right: 18px; }
+.walton-accessibility { padding-block: 48px 28px; }
+.accessibility-chart figcaption { padding: 14px 18px; }
+.score-comparison { display: grid; grid-template-columns: minmax(150px, 1fr) minmax(120px, .8fr) minmax(150px, 1fr) auto; gap: clamp(20px, 4vw, 54px); align-items: center; padding: 30px clamp(20px, 4vw, 50px); }
+.score-value span, .score-delta span { display: block; margin-bottom: 7px; color: #586366; font: 9px 'Courier New', monospace; letter-spacing: 1.2px; }
+.score-value strong { color: var(--navy); font: 500 clamp(38px, 5vw, 62px)/1 'Pixelify Sans', monospace; }
+.score-value-after strong, .score-delta strong { color: #52745a; }
+.score-track { display: flex; align-items: center; color: #52745a; }
+.score-track span { flex: 1; height: 1px; background: #17254855; }
+.score-track i { padding: 0 11px; font: normal 18px 'Courier New', monospace; }
+.score-delta { padding-left: 24px; border-left: 1px solid #17254835; }
+.score-delta strong { display: block; margin-bottom: 7px; font: 500 30px/1 'Pixelify Sans', monospace; }
+.score-delta span { max-width: 90px; margin: 0; line-height: 1.35; }
+@media (max-width: 960px) {
+  .walton-case-hero { grid-template-columns: minmax(0, 1.1fr) minmax(300px, .9fr); }
+  .walton-case-logo { min-height: 290px; }
+}
+@media (max-width: 780px) {
+  .walton-case-hero { grid-template-columns: 1fr; gap: 30px; }
+  .walton-case-logo { min-height: 280px; }
+  .score-comparison { grid-template-columns: 1fr 56px 1fr; }
+  .score-delta { grid-column: 1 / -1; display: flex; gap: 12px; align-items: baseline; padding: 16px 0 0; border-left: 0; border-top: 1px solid #17254835; }
+  .score-delta span { max-width: none; }
+}
+@media (max-width: 560px) {
+  .walton-case-study > .site-wrap:first-child { padding-top: 26px; }
+  .walton-case-hero { padding-bottom: 42px; }
+  #business-site .walton-case-study h1 { font-size: clamp(42px, 13vw, 60px); }
+  .walton-stat-grid { grid-template-columns: repeat(2, 1fr); }
+  .walton-stat-card { min-height: 170px; padding: 17px; }
+  .stat-index { margin-bottom: 22px; }
+  .walton-stat-card strong { font-size: clamp(36px, 11vw, 48px); }
+  #business-site .walton-stat-card h3 { font-size: 12px; }
+  .score-comparison { grid-template-columns: 1fr; gap: 18px; }
+  .score-track { transform: rotate(90deg); width: 40px; margin: 0 auto; }
+  .score-value, .score-value-after { text-align: center; }
+  .score-delta { grid-column: 1; justify-content: center; }
+}
