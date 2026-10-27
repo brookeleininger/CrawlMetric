@@ -194,7 +194,7 @@
 .case-section-heading span { display: block; margin-bottom: 18px; color: var(--cyan); font-size: 10px; letter-spacing: 1.4px; }
 #business-site .walton-case-study .case-section-heading h2 { color: var(--paper); font: italic clamp(38px, 5vw, 66px)/1.03 Georgia, 'Times New Roman', serif; letter-spacing: -2px; }
 .case-section-heading > p { max-width: 430px; justify-self: end; color: #aab7c9; font-size: 14px; }
-.walton-stat-grid { display: grid; grid-template-columns: repeat(5, 1fr); border-top: 1px solid #7ec9cb55; border-left: 1px solid #7ec9cb55; }
+.walton-stat-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border-top: 1px solid #7ec9cb55; border-left: 1px solid #7ec9cb55; }
 .walton-stat-card { position: relative; min-height: 310px; padding: 30px 26px; border-right: 1px solid #7ec9cb55; border-bottom: 1px solid #7ec9cb55; background: #111c32; transition: transform .2s, background .2s; }
 .walton-stat-card:hover { z-index: 1; transform: translateY(-4px); background: #15243e; }
 .stat-index { display: block; margin-bottom: 52px; color: var(--cyan); font-size: 9px; }
@@ -202,6 +202,7 @@
 .walton-stat-card strong small { margin-left: 3px; font-size: .36em; letter-spacing: 0; }
 #business-site .walton-stat-card h3 { margin: 22px 0 10px; color: var(--paper); font: 18px/1.2 'Courier New', monospace; }
 .walton-stat-card p { color: #aab7c9; font-size: 12px; line-height: 1.55; }
+.walton-stat-card-crawls p { max-width: 170px; margin-top: 8px; font: 10px/1.4 'Courier New', monospace; }
 .stat-card-accessibility::after { content: '85.6 → 86.2'; position: absolute; top: 27px; right: 24px; color: #aab7c9; font: 9px 'Courier New', monospace; }
 .walton-accessibility { padding-block: 100px; }
 .case-section-heading-light span { color: #52745a; }
