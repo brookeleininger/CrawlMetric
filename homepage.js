@@ -99,9 +99,4 @@
   document.addEventListener('keydown', event => {
     if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') { closeMenu(); menu.focus(); }
   });
-  const replay = document.getElementById('site-replay');
-  replay.hidden = !['localhost', '127.0.0.1', ''].includes(location.hostname);
-  replay.addEventListener('click', () => {
-    try { sessionStorage.removeItem(introSessionKey); } catch (_) {}
-  });
 })();

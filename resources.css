@@ -32,3 +32,7 @@
 @media(max-width:950px){.report-feature-grid,.title-two-head{grid-template-columns:1fr}.title-two-head{gap:26px}.title-two-dashboard{grid-template-columns:1fr 1fr}.title-two-standard{grid-column:1/-1}.resource-cta-grid{grid-template-columns:1fr;align-items:start}#business-site .resource-cta .site-button{justify-self:start}}
 @media(max-width:700px){.resources-hero,.report-feature,.title-two,.supporting-tools,.resource-cta{padding-block:58px}.resources-hero-grid,.tools-head{align-items:start;flex-direction:column;gap:22px}.report-feature-grid{grid-template-columns:minmax(0,1fr);gap:55px}.report-preview{box-shadow:9px 9px 0 #09101f}.report-pages{min-height:380px;margin:16px}.report-page{width:230px;height:310px}.report-page-front{left:calc(50% - 115px);padding:24px}.report-page-front>strong{font-size:37px}.report-page-front>small{left:24px}.title-two-dashboard,.tools-grid{grid-template-columns:1fr}.title-two-standard{grid-column:auto}.title-two-dashboard article{min-height:250px}.title-two-footer{grid-template-columns:1fr}.title-two-footer small{grid-column:auto}.tools-grid article{min-height:275px}#business-site .tools-grid h3{margin-top:48px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+
+
+#business-site .report-copy h1 { color: var(--paper); font: 400 clamp(40px, 4.5vw, 62px)/.96 'Pixelify Sans', monospace; letter-spacing: -1.5px; }
+#business-site .report-copy h1 em { color: var(--green); font-style: normal; }

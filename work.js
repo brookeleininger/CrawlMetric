@@ -1,7 +1,8 @@
 (() => {
   const cases = {
     walton: { id: 'walton-case', title: 'Walton College / Web SEO Intern — CrawlMetric' },
-    ozarks: { id: 'ozarks-case', title: 'Animal Clinic of the Ozarks / Concept — CrawlMetric' }
+    ozarks: { id: 'ozarks-case', title: 'Animal Clinic of the Ozarks / Concept — CrawlMetric' },
+    asumh: { id: 'asumh-case', title: 'ASUMH / Concept — CrawlMetric' }
   };
   const selectedCase = cases[new URLSearchParams(location.search).get('case')];
   if (selectedCase) {

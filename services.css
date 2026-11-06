@@ -80,3 +80,108 @@
   .services-experience-stats article { min-height: 130px; }
   .services-experience-stats strong { margin-top: 18px; }
 }
+/* Featured research publication, scoped to Services. */
+.services-publication { padding: 76px 0; background: #0d1528; background-image: linear-gradient(#7ec9cb09 1px, transparent 1px), linear-gradient(90deg, #7ec9cb09 1px, transparent 1px); background-size: 42px 42px; border-block: 1px solid #7ec9cb38; }
+.services-publication-layout { display: grid; grid-template-columns: minmax(240px, .85fr) minmax(0, 1.15fr); gap: clamp(36px, 7vw, 100px); align-items: center; }
+.publication-cover { display: block; max-width: 370px; width: 100%; margin-inline: auto; border: 1px solid #7ec9cb66; box-shadow: 12px 12px 0 #080f1d; }
+.publication-cover img { display: block; width: 100%; height: auto; }
+.publication-label { font: 11px/1.5 'Courier New', monospace; letter-spacing: 1.2px; color: #7ec9cb; margin-bottom: 24px; }
+#business-site .services-publication h2 { color: #f2f2e9; font: 400 clamp(36px, 4.1vw, 58px)/1.03 'Pixelify Sans', monospace; letter-spacing: -1.4px; }
+.publication-copy h2 span { color: #b6d18f; }
+.publication-description { font: 14px/1.8 'Courier New', monospace; color: #c1ccda; margin-top: 24px; max-width: 560px; }
+.publication-meta { display: flex; flex-wrap: wrap; gap: 24px 44px; margin: 28px 0; padding: 18px 0; border-block: 1px solid #7ec9cb38; }
+.publication-meta dt { font: 10px/1.5 'Courier New', monospace; letter-spacing: 1px; color: #7ec9cb; margin-bottom: 6px; }
+.publication-meta dd { margin: 0; font: 12px/1.5 'Courier New', monospace; color: #f2f2e9; }
+.publication-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 26px; }
+#business-site .publication-read { display: inline-flex; align-items: center; gap: 20px; padding: 14px 18px; color: #0d1528; background: #b6d18f; font: 16px/1.25 'Pixelify Sans', monospace; }
+#business-site .publication-read:hover { background: #c6dea4; }
+#business-site .publication-download { font: 12px/1.5 'Courier New', monospace; color: #f2f2e9; text-decoration: underline; text-underline-offset: 6px; padding-block: 12px; }
+.publication-note { margin-top: 22px; font: 11px/1.7 'Courier New', monospace; color: #aab7c9; max-width: 520px; }
+.publication-sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@media (max-width: 780px) { .services-publication { padding-block: 56px; } .services-publication-layout { grid-template-columns: minmax(0, 1fr); gap: 40px; } .publication-cover { max-width: 310px; } }
+
+/* Text-only research feature. */
+.services-publication-layout { display: block; }
+.publication-copy { max-width: 850px; }
+.publication-description { max-width: 720px; }
+.publication-actions { margin-top: 28px; }
+
+/* Center the review introduction and findings in one balanced column. */
+.services-review-grid { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+.services-review-heading { text-align: center; }
+.services-review-heading > p:last-child { max-width: 620px; margin-inline: auto; }
+.services-review-list { width: 100%; max-width: 880px; margin-inline: auto; }
+.services-review-list article { display: block; text-align: center; padding: 28px 20px; }
+.services-review-list article > span { display: block; margin-bottom: 12px; }
+.services-review-list p { max-width: 680px; margin: 12px auto 0; }
+
+/* Keep the experience summary focused; results live in the case study. */
+.services-experience { display: block; text-align: center; }
+.services-experience-copy > p:not(.site-eyebrow) { margin-inline: auto; max-width: 580px; }
+
+/* A compact technical index, centered within the review section. */
+.services-review-grid { gap: 38px; }
+.services-review-heading > p:last-child { font: 14px/1.8 'Courier New', monospace; max-width: 650px; margin-top: 22px; }
+#business-site .services-review-heading h2 { font-size: clamp(36px, 4.2vw, 56px); line-height: 1.1; }
+.services-review-list { max-width: 1040px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid #7ec9cb45; }
+.services-review-list article { padding: 30px 28px 32px; text-align: center; border-bottom: 1px solid #7ec9cb38; display: flex; flex-direction: column; align-items: center; }
+.services-review-list article:nth-child(odd) { border-right: 1px solid #7ec9cb38; }
+.services-review-list article > span { font: 11px/1.5 'Courier New', monospace; letter-spacing: 1px; margin-bottom: 18px; color: #7ec9cb; }
+#business-site .services-review-list h3 { font: 400 clamp(23px, 2.2vw, 29px)/1.15 'Pixelify Sans', monospace; color: #b6d18f; max-width: 390px; }
+.services-review-list p { font: 13px/1.8 'Courier New', monospace; color: #c0cbd9; max-width: 390px; margin: 14px auto 0; }
+@media (max-width: 700px) {
+  .services-review-list { grid-template-columns: minmax(0, 1fr); }
+  .services-review-list article { padding: 28px 12px; }
+  .services-review-list article:nth-child(odd) { border-right: 0; }
+}
+
+/* Original CrawlMetric ring artwork beside the research publication. */
+.services-publication-layout { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: clamp(30px, 5vw, 72px); align-items: center; }
+.publication-ring { width: 100%; max-width: 440px; justify-self: center; background-image: none; }
+@media (max-width: 780px) { .services-publication-layout { grid-template-columns: minmax(0, 1fr); gap: 32px; } .publication-ring { max-width: 320px; } }
+/* Contrast section using the Contact form's exact cream and navy. */
+.services-review { background: #f1efe4; color: #15213a; }
+#business-site .services-review-heading h2,
+#business-site .services-review-list h3,
+#business-site .services-experience-copy h3 { color: #15213a; }
+#business-site .services-review-heading h2 em { color: #52745a; }
+.services-review-heading .site-eyebrow,
+.services-review-list article > span,
+.services-experience-copy .site-eyebrow { color: #366768; }
+.services-review-heading > p:last-child,
+.services-review-list p,
+.services-experience-copy > p:not(.site-eyebrow) { color: #394b5c; }
+.services-review-list,
+.services-review-list article,
+.services-review-list article:nth-child(odd),
+.services-experience { border-color: #15213a30; }
+#business-site .services-experience-copy a { color: #15213a !important; border-color: #366768; }
+@media (max-width: 700px) { .services-review-list article:nth-child(odd) { border-right: 0; } }
+
+/* Stagger the opening statement like the homepage hero. */
+.services-path-first .services-section-head { display: block; }
+#business-site #services-title { max-width: 1120px; font-size: clamp(38px, 5vw, 68px); line-height: 1.06; }
+#services-title > span { display: block; }
+#services-title > span:last-child { margin: .18em 0 0 10%; }
+.services-path-first .services-section-head > p { max-width: 560px; margin-top: 28px; }
+@media (max-width: 700px) { #business-site #services-title { font-size: clamp(34px, 7vw, 48px); } #services-title > span:last-child { margin-left: 5%; } }
+/* Let the opening statement span the available page width. */
+#business-site #services-title { max-width: none; width: 100%; font-size: clamp(46px, 6.7vw, 98px); line-height: 1.02; letter-spacing: -.035em; }
+#services-title > span:last-child { margin: .16em 0 0 5%; }
+@media (max-width: 700px) {
+  #business-site #services-title { font-size: clamp(38px, 8vw, 56px); }
+  #services-title > span:last-child { margin-left: 4%; }
+}
+
+/* Distinct experience feature beneath the cream audit index. */
+.services-experience { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(28px, 5vw, 64px); align-items: center; padding: clamp(28px, 4vw, 48px); margin-top: 56px; border: 1px solid #7ec9cb50; background: #0d1528; text-align: left; }
+.services-experience-logo img { display: block; width: 100%; max-width: 380px; height: auto; padding: 16px; background: #fff; }
+.services-experience-logo > span { display: block; margin-top: 18px; font: 10px/1.7 'Courier New', monospace; color: #b6d18f; letter-spacing: 1px; }
+#business-site .services-experience-copy .site-eyebrow { color: #7ec9cb; font-size: 11px; }
+#business-site .services-experience-copy h3 { color: #f2f2e9; font: 400 clamp(27px, 3vw, 40px)/1.1 'Pixelify Sans', monospace; margin: 16px 0; }
+#business-site .services-experience .services-experience-copy > p:not(.site-eyebrow) { color: #d0dae6; font: 400 14px/1.8 'Courier New', monospace; margin-inline: 0; max-width: 480px; }
+#business-site .services-experience-copy a { display: inline-flex; align-items: center; gap: 24px; color: #b6d18f !important; border-color: #7ec9cb66; font: 16px/1.4 'Pixelify Sans', monospace; margin-top: 22px; }
+#business-site .services-experience .services-experience-copy > .services-experience-disclosure { color: #b5c2d3; font: 400 11px/1.7 'Courier New', monospace; margin-top: 18px; }
+@media (max-width: 700px) { .services-experience { grid-template-columns: minmax(0, 1fr); } .services-experience-logo img { max-width: 300px; } }
+/* Match the review descriptions to the service-card body type. */
+#business-site .services-review-list p { font-family: Arial, Helvetica, sans-serif; }

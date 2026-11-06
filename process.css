@@ -86,3 +86,9 @@
 @media (prefers-reduced-motion: reduce) {
   .process-page { scroll-behavior: auto; }
 }
+
+/* Match the homepage's mint service button. */
+#business-site .process-explore-button { display: inline-flex; align-items: center; justify-content: space-between; gap: 36px; padding: 18px 24px; background: #b6d18f; color: #172548; font: 400 20px/1.2 'Pixelify Sans', monospace; border: 0; max-width: 100%; }
+#business-site .process-explore-button:hover { background: #c6dea4; }
+.process-explore-button span { font-family: Arial, sans-serif; font-size: 20px; }
+@media (max-width: 480px) { #business-site .process-explore-button { font-size: 18px; padding: 16px 20px; gap: 28px; } }

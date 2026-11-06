@@ -327,3 +327,17 @@
   .score-value, .score-value-after { text-align: center; }
   .score-delta { grid-column: 1; justify-content: center; }
 }
+
+/* Prospective-client preview; text identity until a logo is supplied. */
+#business-site .experience-card.asumh-card { background: linear-gradient(135deg, #23394c, #132638 65%, #101e2b); border-color: #6a8b9e; }
+#business-site .experience-card.asumh-card:hover { background: linear-gradient(135deg, #2a4258, #193047 65%, #142638); border-color: #8baebb; }
+.asumh-card::before { content: 'ASUMH'; }
+.asumh-wordmark { position: relative; min-height: 220px; margin: 36px auto; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; text-align: center; }
+.asumh-wordmark strong { font: 400 clamp(42px, 7vw, 88px)/1 Georgia, serif; letter-spacing: 2px; }
+.asumh-wordmark > span { font: 12px/1.7 'Courier New', monospace; letter-spacing: 2px; color: #c2d3dc; }
+.asumh-card .experience-dot { background: #7ec9cb; }
+@media(max-width:780px) { .asumh-wordmark { min-height: 160px; margin-block: 28px; } .asumh-wordmark > span { letter-spacing: .5px; font-size: 11px; } }
+
+.asumh-logo { position: relative; min-height: 220px; margin: 36px auto; display: flex; align-items: center; justify-content: center; }
+.asumh-logo img { display: block; width: min(100%, 560px); height: auto; padding: 16px; background: #fff; box-sizing: border-box; }
+@media (max-width: 780px) { .asumh-logo { min-height: 160px; margin-block: 28px; } .asumh-logo img { padding: 10px; } }

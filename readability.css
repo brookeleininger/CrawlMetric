@@ -1,0 +1,13 @@
+/* Shared readability pass: stronger text without changing the brand typefaces. */
+#business-site p { font-weight: 600; }
+#business-site :is(.services-deliverable > span, .services-card-top, .services-scope-note, .services-review-list article > span, .process-stage-label, .process-output > span, .process-accessibility-note, .experience-eyebrow, .experience-note, .publication-label, .publication-note, .resource-note, .site-small-note) { font-weight: 600; font-size: 12px; line-height: 1.7; }
+/* Copy on light surfaces. */
+#business-site :is(.services-path, .services-review, .services-cta, .process-map, .process-cta, .site-about, .home-details, .home-questions, .experience-page, .contact-form-panel, .resource-cta, .title-two) p { color: #172548; }
+#business-site :is(.services-deliverable > span, .services-card-top, .services-review-list article > span, .process-stage-label, .process-output > span, .question-number) { color: #274e48; font-weight: 600; }
+#business-site .services-scope-note { color: #273b4c; }
+/* Keep copy bright when a navy module sits inside a light section. */
+#business-site :is(.experience-card, .experience-detail-panel, .walton-case-dashboard, .walton-case-logo, .process-system) p { color: #d3dce7; }
+/* Supporting copy on the site's navy sections. */
+#business-site :is(.site-hero-copy > p, .publication-description, .publication-note, .process-system li small, .process-principle-list p, .resources-hero-grid > p, .report-copy > p, .tools-grid p, .contact-lede, .site-footer-brand > p) { color: #d0dae6; }
+#business-site :is(.services-section-head > p, .services-card > p, .services-review-list p, .services-review-heading > p:last-child, .process-stage-copy > p, .process-output p, .experience-heading > p, .experience-note, .question-item p) { font-size: 14px; line-height: 1.8; }
+#business-site .site-footer-brand > p { font-weight: 400; }
