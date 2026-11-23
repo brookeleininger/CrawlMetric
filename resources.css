@@ -115,3 +115,28 @@
   font-size: 16px;
   line-height: 1.4;
 }
+
+/* Match the readable supporting copy on Our Process. */
+#business-site .resources-page :is(.report-copy > p:not(.resource-kicker), .report-copy li, .title-two-head > p, .title-two-dashboard p, .title-two-footer > p, .tools-head > p, .tools-grid p, .title-two-footer small) {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+/* Separate the two preview captions in normal flow, even with larger text. */
+#business-site .report-page-front { height: auto; min-height: 390px; }
+#business-site .report-page-front > * { flex-shrink: 0; }
+#business-site .mini-report-footer {
+  position: static;
+  display: block;
+  margin-top: 28px;
+  padding-top: 14px;
+  border-top: 1px solid #0d15283b;
+  font: 600 10px/1.6 Arial, Helvetica, sans-serif;
+  letter-spacing: .2px;
+  color: #273b4c;
+}
+#business-site .report-pages { min-height: 450px; }
+@media (max-width: 700px) {
+  #business-site .report-page-front { min-height: 350px; }
+  #business-site .report-pages { min-height: 410px; }
+  #business-site .mini-report-footer { margin-top: 24px; }
+}
