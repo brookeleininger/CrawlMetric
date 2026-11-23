@@ -36,3 +36,82 @@
 
 #business-site .report-copy h1 { color: var(--paper); font: 400 clamp(40px, 4.5vw, 62px)/.96 'Pixelify Sans', monospace; letter-spacing: -1.5px; }
 #business-site .report-copy h1 em { color: var(--green); font-style: normal; }
+
+/* Keep the report illustration readable without fixed text overlaps. */
+#business-site .report-page-front {
+  display: flex;
+  flex-direction: column;
+  height: 390px;
+  padding: 24px;
+}
+#business-site .mini-report-brand {
+  flex-shrink: 0;
+  padding-bottom: 12px;
+  line-height: 1.25;
+}
+#business-site .report-page-front > p {
+  margin: 24px 0 8px;
+  font-size: 11px;
+  line-height: 1.5;
+  letter-spacing: .7px;
+}
+#business-site .report-page-front > strong {
+  margin: 0;
+  font-size: 42px;
+  line-height: 1.08;
+}
+#business-site .mini-report-score {
+  flex-shrink: 0;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 12px;
+}
+#business-site .mini-report-score span { font-size: 10px; line-height: 1.5; }
+#business-site .mini-report-score b { line-height: 1.2; }
+#business-site .report-page-front > small {
+  position: static;
+  display: block;
+  margin-top: auto;
+  padding-top: 16px;
+  font-size: 9px;
+  line-height: 1.6;
+  letter-spacing: .2px;
+}
+/* Resource-only reading sizes; retain the existing typefaces and palette. */
+#business-site .report-preview-top {
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 10px;
+  line-height: 1.5;
+}
+#business-site .resources-page :is(.resource-number, .resource-kicker, .site-eyebrow, .tool-top) {
+  font-size: 12px;
+  line-height: 1.6;
+}
+#business-site .resources-page :is(.report-copy > p:not(.resource-kicker):not(.resource-note), .title-two-head > p, .title-two-footer > p, .tools-head > p, .tools-grid p) {
+  font-size: 14px;
+  line-height: 1.8;
+}
+#business-site .report-copy li { font-size: 14px; line-height: 1.7; }
+#business-site .resources-page :is(.resource-text-link, .tools-grid a, .title-two-footer a) {
+  font-size: 13px;
+  line-height: 1.65;
+}
+#business-site .title-two-dashboard span { font-size: 12px; line-height: 1.6; }
+#business-site .title-two-dashboard p { font-size: 14px; line-height: 1.8; }
+#business-site .title-two-footer small { font-size: 12px; line-height: 1.7; color: #465454; }
+@media (max-width: 700px) {
+  #business-site .report-page-front { height: 350px; padding: 22px; }
+  #business-site .report-page-front > strong { font-size: 37px; }
+  #business-site .report-page-front > p { margin-top: 20px; }
+  #business-site .mini-report-score { margin-top: 18px; }
+  #business-site .report-pages { min-height: 400px; }
+  #business-site .title-two-deadline > div { gap: 16px; }
+}
+
+#business-site .resources-page .site-button {
+  font-family: 'Pixelify Sans', monospace;
+  font-size: 16px;
+  line-height: 1.4;
+}
